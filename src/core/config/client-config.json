@@ -1,0 +1,79 @@
+{
+    "gameName": "Clean Start",
+	"welcomeMsg": "This world can be anything you dream it to be. ...  a carnival ... a haunted house .... a city ... anything ... it is all up to you.  You have the power to create.   May inspiration dwell in you forever.",
+  "playerLeftMsg": "... has packed up and headed for home.",
+    "theme": {
+        "fontFamily": "Arial",
+        "titleFontColor": "#C4A43C",
+        "formColor": "#fff",
+        "formFontColor": "white",
+        "formButtonColor": "#A82F1E",
+        "overlayColor": "rgba(0,0,0, 0.9)",
+        "fontSize": 2,
+        "logo":"https://cdn.glitch.com/376a6bb1-e9b2-4998-af7a-cc4ea70344b8%2Fclean_start_128.png?v=1572433640155"
+    },
+    "avatar": {
+        "models": [{
+            "type": 2,
+            "url": "https://cdn.glitch.com/984a335f-9425-469e-8978-85c88c06d624%2Fboz_head.glb?v=1566741683664",
+            "lefthand": "https://cdn.glitch.com/984a335f-9425-469e-8978-85c88c06d624%2Fboz_lefthand.glb?v=1566749593952",
+            "righthand":"https://cdn.glitch.com/984a335f-9425-469e-8978-85c88c06d624%2Fboz_righthand.glb?v=1566749593705",
+            "scale": 1,
+            "yOffset": 0,
+            "animations": {
+                "idle": "idle",
+                "walk": "walk"
+            },
+            "msg": {
+                "color": "orange",
+                "offset": "0 1.75 0"
+            }
+        }, {
+            "type": 1,
+            "url": "https://cdn.glitch.com/7001d18b-ab06-4934-84ee-f9bc0645e42c%2Fchip_eyes_pack.glb?1553596528401",
+            "scale": 0.75,
+            "yOffset": 0.1,
+            "animations": {
+                "idle": "idle",
+                "walk": "walk"
+            },
+            "msg": {
+                "color": "orange",
+                "offset": "0 4 0"
+            }
+        }, {
+            "type": 1,
+            "url": "https://cdn.glitch.com/fec96da0-7526-4b9a-aecf-3abbbe7fcdc5%2Fmel.glb?v=1567388543651",
+            "scale":0.75,
+            "yOffset": 0.1,
+            "animations": {
+                "idle": "idle",
+                "walk": "walk"
+            },
+            "msg": {
+                "color": "orange",
+                "offset": "0 4 0"
+            }
+        }]},
+    "sounds": {
+        "playerJoined": {
+            "url": "https://cdn.glitch.com/376a6bb1-e9b2-4998-af7a-cc4ea70344b8%2Fwheer.mp3?v=1572442693465"
+        },
+        "playerLeft": {
+            "url": "https://cdn.glitch.com/376a6bb1-e9b2-4998-af7a-cc4ea70344b8%2Fwheer.mp3?v=1572442693465"
+        }
+    },
+    "bgm": {
+        "songs": [326404324],
+        "volume": 0.2,
+        "playAll": true,
+        "initialDelay": 5000
+    },
+    "voice": {
+        "name": "Google UK English Female",
+        "rate": 0.9,
+        "pitch": 1,
+        "volume": 1,
+        "welcomeDelay": 4000
+    }
+}
