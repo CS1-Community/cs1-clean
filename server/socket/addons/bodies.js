@@ -34,12 +34,6 @@ const bodies = {
         for (name in state.bodies) {
           ibs.push(state.bodies[name]);
         }
-        if (state.lateBodies.length > 0) {
-          state.lateBodies.forEach(d => {
-            socket.emit("add-grabbable-primitive", d);
-            console.log("sending late grabbable primitive");
-          });
-        }
         if (ibs.length > 0) {
           socket.emit("initial-bodies-state", ibs);
           console.log("sending initial bodies state");
