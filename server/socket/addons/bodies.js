@@ -13,7 +13,8 @@ const bodies = {
       state.lateBodies = [];
       console.log("Clearing state from bodies socket addon.");
     }
-
+    
+    // PLACE TO SAVE GAME STATE TO DB IF NEEDED
     socket.addonChannel.on("remove-player", function() {
       if (Object.keys(state.players).length === 0) {
         state.bodies = {};
@@ -28,7 +29,6 @@ const bodies = {
     });
 
     socket.on("new-player", function() {
-      //console.log("changedBodies length:", state.changedBodies.length);
       if (Object.keys(state.players).length > 1) {
         let ibs = [];
         for (name in state.bodies) {
@@ -36,13 +36,13 @@ const bodies = {
         }
         if (state.lateBodies.length > 0) {
           state.lateBodies.forEach(d => {
-            socket.broadcast.emit("add-grabbable-primitive", d);
+            socket.emit("add-grabbable-primitive", d);
+            console.log("sending late grabbable primitive");
           });
         }
         if (ibs.length > 0) {
           socket.emit("initial-bodies-state", ibs);
           console.log("sending initial bodies state");
-          //console.log(ibs);
         }
       }
       if (Object.keys(state.players).length === 1) {
