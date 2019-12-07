@@ -111,7 +111,7 @@ export default (function grabbable() {
         CS1.scene.appendChild(entity);
       });
       
-      CS1.socket.on("post-release", grabbableName=>{
+       CS1.socket.on("post-release", grabbableName=>{
         if( CS1.grabbables[grabbableName] &&
              typeof CS1.callbacks[CS1.grabbables[grabbableName].components.grabbable.data.postRelease]=='function' )
           CS1.callbacks[CS1.grabbables[grabbableName].components.grabbable.data.postRelease](grabbableName);
