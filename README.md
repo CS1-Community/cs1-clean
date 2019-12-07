@@ -19,6 +19,12 @@ ____
 <a href="https://youtu.be/lKYQ1o2Uc_0" rel="noopener noreferer">![Video Overview](https://cdn.glitch.com/162b879e-fd42-40d9-8519-671d783b8c70%2FGetting_Started_Video.png?v=1575052424055)</a>
 
 
+
+____
+
+## Introductory Presentation
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQUJYDleE4LBILr-2V57v_kPAD5TY-X6hnA94fJWl8drADMHHDtMB9BnDUtw7v1N6JmVS1NK_dTYc71/embed?start=false&loop=false&delayms=60000" frameborder="0" width="480" height="285" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 ____
 
 ## Tech Demo
