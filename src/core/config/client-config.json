@@ -92,5 +92,9 @@
     "pitch": 1,
     "volume": 1,
     "welcomeDelay": 4000
+  },
+  "vrui": {
+    "scale": 1.0,
+    "offset": "0 0.3 0"
   }
 }
