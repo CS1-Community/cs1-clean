@@ -102,7 +102,8 @@ export default CS1=>{
     affects:{type:'string',default:''},
     value:{type:'number',default:1},
     spawns:{type:'boolean',default:false},
-    spawnDelay:{type:'number',default:5}
+    spawnDelay:{type:'number',default:5},
+    requirement:{type:'string',default:''}
 	},
 	init: function()
 	{
@@ -118,6 +119,9 @@ export default CS1=>{
   }, 
 	tick: function()
 	{   
+     if(this.data.requirement && !CS1.myPlayer.hasOwnProperty(this.data.requirement)){
+       return;
+     }
      if((this.el.object3D.position.distanceTo(CS1.myPlayer.object3D.position) < this.data.threshold)&&
           this.data.affects!='avatarUpgrade'){ 
        this.collect();
