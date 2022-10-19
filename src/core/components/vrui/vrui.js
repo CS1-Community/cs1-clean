@@ -57,6 +57,10 @@ AFRAME.registerSystem('vrui', {
     m.setAttribute('htmlembed','');
     m1.setAttribute('htmlembed','');
     m2.setAttribute('htmlembed','');
+      
+    m1.children[0].innerText = 'Menu';
+    m2.children[0].innerText = 'Avatars';
+    CS1.stats[Object.keys(CS1.stats)[1]].setValue(CS1.stats[Object.keys(CS1.stats)[1]].value)
 
 
    controls.init();
